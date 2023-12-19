@@ -13,12 +13,14 @@
 2. truthfulness, subject, context/venue, speaker, state, party, and prior history 으로 구성된 12,836 행의 tsv 파일
 
 3. 다양한 소셜 미디어 플랫폼으로 구성된 8560 행의 csv 파일
-![image](https://github.com/dayunss/st/assets/111956429/887eb66d-f3a8-4f2e-b9ea-d741137f4b12)
+
 <img src="https://github.com/dayunss/st/assets/111956429/887eb66d-f3a8-4f2e-b9ea-d741137f4b12).png" width="400" height="400"/>
 
 위 데이터셋은 politics, world news, medical 등 다양한 카테고리로의 뉴스 기사들로 구성되어 있다.
 
-가짜 기사와 일반 기사 각각의 가장 빈도수가 높은 상위 15개 단어를 비교한 결과 유의미한  차이는 없지만 등장 단어가 다르다는 것을 알 수 있다.![image](https://github.com/dayunss/st/assets/111956429/96c3cc29-2198-4aae-8631-c2058b0c1255)
+가짜 기사와 일반 기사 각각의 가장 빈도수가 높은 상위 15개 단어를 비교한 결과 유의미한  차이는 없지만 등장 단어가 다르다는 것을 알 수 있다.
+
+
 
 
 ## 4.방법
