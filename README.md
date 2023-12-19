@@ -14,7 +14,7 @@
 
 3. 다양한 소셜 미디어 플랫폼으로 구성된 8560 행의 csv 파일
 ![image](https://github.com/dayunss/st/assets/111956429/887eb66d-f3a8-4f2e-b9ea-d741137f4b12)
-<img src="https://github.com/dayunss/st/assets/111956429/887eb66d-f3a8-4f2e-b9ea-d741137f4b12).png" width="200" height="400"/>
+<img src="https://github.com/dayunss/st/assets/111956429/887eb66d-f3a8-4f2e-b9ea-d741137f4b12).png" width="400" height="400"/>
 
 위 데이터셋은 politics, world news, medical 등 다양한 카테고리로의 뉴스 기사들로 구성되어 있다.
 
