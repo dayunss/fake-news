@@ -13,8 +13,12 @@
 2. truthfulness, subject, context/venue, speaker, state, party, and prior history 으로 구성된 12,836 행의 tsv 파일
 
 3. 다양한 소셜 미디어 플랫폼으로 구성된 8560 행의 csv 파일
+![image](https://github.com/dayunss/st/assets/111956429/887eb66d-f3a8-4f2e-b9ea-d741137f4b12)
 
 위 데이터셋은 politics, world news, medical 등 다양한 카테고리로의 뉴스 기사들로 구성되어 있다.
+
+가짜 기사와 일반 기사 각각의 가장 빈도수가 높은 상위 15개 단어를 비교한 결과 유의미한  차이는 없지만 등장 단어가 다르다는 것을 알 수 있다.![image](https://github.com/dayunss/st/assets/111956429/96c3cc29-2198-4aae-8631-c2058b0c1255)
+
 
 ## 4.방법
 1.데이터 전처리
@@ -33,32 +37,16 @@
 
 또한 RoBERTa는 뉴스 콘텐츠의 복잡하고 다양한 문맥을 효과적으로 분석할 수 있는 능력을 가지고 있어, 더 높은 정확도와 신뢰성을 제공하였다.
 
-RNN(Recurren Neural Network)
-시퀀스 데이터에 효과적이다.
-시간적 연속성을 가지는 데이터를 처리하는데  적합하다.
-Vanishing Gradient 문제가 발생한다.
-병렬 처리 능력이 제한적이다.
-![image](https://github.com/dayunss/st/assets/111956429/4b67d622-a90f-4348-96ad-b121e4b84bdf)
+![image](https://github.com/dayunss/st/assets/111956429/5b2b1f78-573b-4bfd-a64c-7c6bb7d318cd)
 
-LSTM (Long Short-Term Memory) 
-RNN의 Gradient 소실 문제를 해결한다.
-복잡한 시퀀스 데이터에 효과적이다.
-복잡한 구조로 인해 계산 비용이 높다.
-모델의 크기가 크기 때문에 학습시간이 오래 걸리고 많은 메모리를 필요로 한다.
-![image](https://github.com/dayunss/st/assets/111956429/2e7e5204-aad2-4f7d-bb62-1f1e60465dac)
 
-GRU (Gated Recurrent Unit)
-LSTM보다 구조가 간단하여 계산 비용이 적게 든다.
-LSTM에 비해 약간의 성능 저하가 있을 수 있다.
-여전히 병렬 처리에는 제한이 있다. 
-![image](https://github.com/dayunss/st/assets/111956429/43706482-ac75-4b6e-91a3-04d951b84564)
 
-## ->
+
+## -->
 RoBERTa (Robustly Optimized BERT Pretraining Approach) 
 
 RoBERTa 모델은 BERT의 변형으로, 더 큰 데이터셋과 긴 학습 과정을 통해 성능을 개선한 모델로, 트랜스포머 기반의 아키텍처를 사용하여 문맥에 더 민감하고 깊이 있는 언어 이해를 가능하게 한다. 이때 Dynamic Masking, Full sentence without NSP, Large mini-batches, Larger byte-level BPE 등의 기법이 사용되었다.
-![image](https://github.com/dayunss/st/assets/111956429/bd9d12b3-8483-41ff-a7ca-20615ae3a710)
-![image](https://github.com/dayunss/st/assets/111956429/3888814e-a973-4f10-a8ca-a9974d4eb8bc)
+
 
 
 
@@ -77,6 +65,7 @@ RoBERTa 모델은 BERT의 변형으로, 더 큰 데이터셋과 긴 학습 과�
 가짜 뉴스는 명확하게 참/거짓으로 나뉘지 않는다. 제목과 본문의 일치도가 낮은 경우, 과장된 내용이 있는 경우 등 가짜 뉴스의 범주는 굉장히 넓다. 이러한 복잡한 문제는 이진 분류보다 다중 분류를 이용한다면 더 개선된 결과를 도출할 것으로 기대된다.
 
 
+![image](https://github.com/dayunss/st/assets/111956429/654e8070-8dc3-441d-89e4-e98c357f8ffa)
 
 
 
